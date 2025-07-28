@@ -6,9 +6,10 @@ Remover itens existentes.
 Listar todos os itens atuais no inventário.
 Seu inventário deve ser inicializado como uma lista vazia. Os itens podem ser qualquer string que represente o nome do item, como:
 
-📜 Pergaminho de Fogo
-⚔️ Espada de Luz
-🛡️ Escudo Mágico
+- 📜 Pergaminho de Fogo
+- ⚔️ Espada de Luz
+- 🛡️ Escudo Mágico
+<br>
 Entrada:
 Uma ação (pode ser 'adicionar', 'remover' ou 'listar') e, quando aplicável, o nome do item.
 
