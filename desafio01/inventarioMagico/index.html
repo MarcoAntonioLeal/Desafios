@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Inventário Mágico</title>
+</head>
+<body>
+    <h1>Desafio Inventário Mágico</h1>
+    <main>
+        <section>
+            Você é um poderoso mago em um mundo de RPG tendo que gerenciar seu inventário de itens mágicos. Seu objetivo é implementar uma função que possa:
+            <ul>
+                <li>
+                    Adicionar itens ao seu inventário.
+                    Remover itens existentes.
+                </li>
+                <li>
+                    Listar todos os itens atuais no inventário.
+                    Seu inventário deve ser inicializado como uma lista vazia.
+                </li>
+                <li>
+                    Os itens podem ser qualquer string que represente o
+                    nome do item, como:
+                    <ul>
+                        <li>📜 Pergaminho de Fogo</li>
+                        <li>⚔️ Espada de Luz</li>
+                        <li>🛡️ Escudo Mágico</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Entrada:</h2>
+            Uma ação pode ser:
+            <ul>
+                <li>Adicionar</li>
+                <li>Remover</li>
+                <li>Listar</li>
+            </ul>
+            <h2>Saída:</h2>
+            <ul>
+                <li>
+                    Para 'adicionar', retorne uma mensagem como: 'Item adicionado com sucesso'
+                </li>
+                <li>
+                    Para 'remover', retorne: 'Item removido com sucesso.' ou uma mensagem de erro se o item não estiver presente
+                </li>
+                <li>
+                    Para 'listar', retorne todos os itens no inventário, ou uma mensagem como: 'Inventário vazio'
+                </li>
+            </ul>
+            <p>Vamos ver até onde vai sua criatividade! 💫</p>
+        </section>
+        <section id="sec-btn">
+            <p>
+                <input type="text" name="item" id="item">
+            </p>
+            <p>
+                <input type="button" value="Adicionar" id="btn-add">
+                <input type="button" value="Remover" id="btn-del">
+                <input type="button" value="Listar" id="btn-list">
+            </p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

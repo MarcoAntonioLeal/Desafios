@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightgray;
+}
+
+main {
+    background-color: white;
+    max-width: 950px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 0.5px solid black;
+}
+
+#sec-btn {
+    display: flex;
+    column-gap: 10px;
+}
