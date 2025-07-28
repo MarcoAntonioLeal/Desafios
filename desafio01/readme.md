@@ -9,7 +9,7 @@ Seu inventário deve ser inicializado como uma lista vazia. Os itens podem ser q
 - 📜 Pergaminho de Fogo
 - ⚔️ Espada de Luz
 - 🛡️ Escudo Mágico
-<br>
+
 Entrada:
 Uma ação (pode ser 'adicionar', 'remover' ou 'listar') e, quando aplicável, o nome do item.
 
