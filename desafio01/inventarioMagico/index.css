@@ -16,6 +16,11 @@ h1 {
     text-align: center;
 }
 
+#container-sec-btn {
+    display: flex;
+    justify-content: center;
+}
+
 input {
     padding: 10px;
     border-radius: 10px;
@@ -26,5 +31,57 @@ input {
 
 #sec-btn {
     display: flex;
+    justify-content: space-between;
     column-gap: 10px;
+}
+
+#item {
+    width: 300px;
+}
+
+#paragrafo-btn input {
+    width: 100px;
+    margin-left: 5px;
+}
+
+#btn-add {
+    background-color: #198754;
+    color: white;
+    border-color: white;
+
+    &:hover {
+        color: #198754;
+        font-weight: bold;
+        background-color: white;
+        border-color: #198754;
+        transition-duration: .5s;
+    }
+}
+
+#btn-del {
+    background-color: #DC3545;
+    color: white;
+    border-color: white;
+
+    &:hover {
+        color: #DC3545;
+        font-weight: bold;
+        background-color: white;
+        border-color: #DC3545;
+        transition-duration: .5s;
+    }
+}
+
+#btn-list {
+    background-color: #FFC107;
+    color: white;
+    border-color: white;
+
+    &:hover {
+        color: #FFC107;
+        font-weight: bold;
+        background-color: white;
+        border-color: #FFC107;
+        transition-duration: .5s;
+    }
 }
