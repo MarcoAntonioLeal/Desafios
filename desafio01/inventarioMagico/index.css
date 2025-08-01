@@ -54,7 +54,7 @@ input {
         font-weight: bold;
         background-color: white;
         border-color: #198754;
-        transition-duration: .5s;
+        transition-duration: .4s;
     }
 }
 
@@ -68,7 +68,7 @@ input {
         font-weight: bold;
         background-color: white;
         border-color: #DC3545;
-        transition-duration: .5s;
+        transition-duration: .4s;
     }
 }
 
@@ -82,6 +82,6 @@ input {
         font-weight: bold;
         background-color: white;
         border-color: #FFC107;
-        transition-duration: .5s;
+        transition-duration: .4s;
     }
 }
