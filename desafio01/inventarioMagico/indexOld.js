@@ -8,10 +8,11 @@ const inventario = []
 
 btnAdd.addEventListener('click', () => {
     const li = document.createElement('li')
+    li.setAttribute('id', inventario.length)
     li.setAttribute('class', 'listas')
     listaDeItens.appendChild(li).textContent = fieldText.value
     
-    inventario.push(li.textContent)
+    inventario.push(fieldText.value)
 
     console.log(li) // teste
     console.log(inventario) // teste
@@ -24,16 +25,14 @@ btnDel.addEventListener('click', () => {
     let indice = inventario.indexOf(fieldText.value)
     inventario.splice(indice, 1)
 
-    //delete lista
+    //ajuste de id nas listas
     let allLists = document.querySelectorAll('.listas')
     allLists.forEach(li => {
-        if(li.textContent == fieldText.value) {
-            li.remove()
-        }
+        li.setAttribute('id', Number(li.id) - 1)
     })
 
     console.log(inventario)//teste
-    console.log(listaDeItens)//teste
+    console.log(allLists)//teste
 
     fieldText.value = ''
 })
