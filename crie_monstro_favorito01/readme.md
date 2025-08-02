@@ -20,4 +20,5 @@ Seu código deve imprimir uma descrição do monstro no seguinte formato:
 O monstro  é um  de nível  e possui a habilidade especial: .
 Exemplo:
 O monstro Dragão é um Dragão de nível 85 e possui a habilidade especial: Vôo de Fogo.
+
 Divirta-se criando seu monstro! 🎮
