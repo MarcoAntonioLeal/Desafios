@@ -6,22 +6,21 @@ const listaDeItens = document.querySelector('#listaItens')
 
 const inventario = []
 
-
-
 btnAdd.addEventListener('click', () => {
-    const li = document.createElement('li')
-    li.setAttribute('class', 'listas')
 
-    if(fieldText.value == '') {
-    console.log('oi')
+    if (fieldText.value == '') {
+        alert('Preencha o nome do item primeiro')
+
+    } else if (inventario.includes(fieldText.value)) {
+        alert('Esse item ja existe na lista')
+
+    } else {
+        const li = document.createElement('li')
+        li.setAttribute('class', 'listas')
+        listaDeItens.appendChild(li).textContent = fieldText.value
+        inventario.push(li.textContent)
     }
-
-    listaDeItens.appendChild(li).textContent = fieldText.value
-    inventario.push(li.textContent)
-
-    console.log(li) // teste
-    console.log(inventario) // teste
-
+    
     fieldText.value = ''
 })
 
