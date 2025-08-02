@@ -17,7 +17,7 @@
                     Remover itens existentes.
                 </li>
                 <li>
-                    Listar todos os itens atuais no inventário.
+                    Remover todos os itens atuais no inventário.
                     Seu inventário deve ser inicializado como uma lista vazia.
                 </li>
                 <li>
@@ -38,7 +38,7 @@
             <ul>
                 <li>Adicionar</li>
                 <li>Remover</li>
-                <li>Listar</li>
+                <li>Deletar</li>
             </ul>
             <h2>Saída:</h2>
             <ul>
@@ -49,7 +49,7 @@
                     Para 'remover', retorne: 'Item removido com sucesso.' ou uma mensagem de erro se o item não estiver presente
                 </li>
                 <li>
-                    Para 'listar', retorne todos os itens no inventário, ou uma mensagem como: 'Inventário vazio'
+                    Para 'deletar', delete todos os itens no inventário
                 </li>
             </ul>
             <p>Vamos ver até onde vai sua criatividade! 💫</p>
@@ -62,11 +62,11 @@
                 <p id="paragrafo-btn">
                     <input type="button" value="Adicionar" id="btn-add">
                     <input type="button" value="Remover" id="btn-del">
-                    <input type="button" value="Listar" id="btn-list">
+                    <input type="button" value="Deletar Lista" id="btn-clear">
                 </p>
             </section>
         </div>
-        <section>
+        <section id="sec-list">
             <ul id="listaItens"></ul>
         </section>
     </main>

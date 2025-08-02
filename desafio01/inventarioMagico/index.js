@@ -1,7 +1,7 @@
 const fieldText = document.querySelector('#item')
 const btnAdd = document.querySelector('#btn-add')
 const btnDel = document.querySelector('#btn-del')
-const btnList = document.querySelector('#btn-list')
+const btnClear = document.querySelector('#btn-clear')
 const listaDeItens = document.querySelector('#listaItens')
 
 const inventario = []
@@ -20,29 +20,44 @@ btnAdd.addEventListener('click', () => {
         listaDeItens.appendChild(li).textContent = fieldText.value
         inventario.push(li.textContent)
     }
-    
+
     fieldText.value = ''
+    fieldText.focus()
 })
 
 btnDel.addEventListener('click', () => {
-    //delete item array
-    let indice = inventario.indexOf(fieldText.value)
-    inventario.splice(indice, 1)
 
-    //delete lista
-    let allLists = document.querySelectorAll('.listas')
-    allLists.forEach(li => {
-        if(li.textContent == fieldText.value) {
-            li.remove()
-        }
-    })
+    if (fieldText.value == '') {
+        alert('Preencha o nome do item primeiro')
 
-    console.log(inventario)//teste
-    console.log(listaDeItens)//teste
+    } else if (!inventario.includes(fieldText.value)) {
+        alert('Esse item não ja existe na lista para ser excluído')
+
+    } else {
+        //delete item array
+        let indice = inventario.indexOf(fieldText.value)
+        inventario.splice(indice, 1)
+
+        //delete item lista
+        let allLists = document.querySelectorAll('.listas')
+        allLists.forEach(li => {
+            if (li.textContent == fieldText.value) {
+                li.remove()
+            }
+        })
+    }
 
     fieldText.value = ''
+    fieldText.focus()
 })
 
-btnList.addEventListener('click', () => {
-    console.log('Quero chocolate')
+btnClear.addEventListener('click', () => {
+    inventario.length = ''
+
+    let allLists = document.querySelectorAll('.listas')
+        allLists.forEach(li => {
+            li.remove()
+        })
+
+    fieldText.focus()
 })

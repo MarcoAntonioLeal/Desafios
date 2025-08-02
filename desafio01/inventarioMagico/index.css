@@ -72,7 +72,7 @@ input {
     }
 }
 
-#btn-list {
+#btn-clear {
     background-color: #FFC107;
     color: white;
     border-color: white;
@@ -85,3 +85,15 @@ input {
         transition-duration: .4s;
     }
 }
+
+#sec-list {
+    display: flex;
+    justify-content: center;
+}
+
+#sec-list ul {
+    list-style-type: square;
+    column-count: 3;
+}
+
+#sec-list ul li {padding: 10px;}
