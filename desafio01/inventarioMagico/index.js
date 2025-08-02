@@ -6,11 +6,17 @@ const listaDeItens = document.querySelector('#listaItens')
 
 const inventario = []
 
+
+
 btnAdd.addEventListener('click', () => {
     const li = document.createElement('li')
     li.setAttribute('class', 'listas')
+
+    if(fieldText.value == '') {
+    console.log('oi')
+    }
+
     listaDeItens.appendChild(li).textContent = fieldText.value
-    
     inventario.push(li.textContent)
 
     console.log(li) // teste
