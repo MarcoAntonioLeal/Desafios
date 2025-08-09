@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Crie seu Monstro</title>
+</head>
+
+<body>
+    <h1>Desafio Crie se Monstro Favorito 🐉</h1>
+    <main>
+        <section>
+            🛡️ Crie Seu Monstro Favorito! 🐉
+            Você é um aventureiro em um mundo cheio de criaturas mágicas! Sua missão é criar um monstro com habilidades
+            únicas para ajudar você em sua jornada.
+            <ul>
+                Entrada: O usuário deve fornecer:
+                Requisitos:
+                <li>Nome do monstro (string)</li>
+                <li>Tipo de elemento (fogo, água, terra, ar)</li>
+                <li>Ponto de Vida (número entre 50 e 200)</li>
+                <li>Habilidades (array de strings, máximo de 3 habilidades)</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>
+                Saída: A função deve retornar um objeto com as seguintes propriedades:
+                <li>name: (nome do monstro)</li>
+                <li>element: (tipo de elemento)</li>
+                <li>health: (ponto de vida)</li>
+                <li>skills: (habilidades)</li>
+            </ul>
+        </section>
+
+        <section>
+
+            <p>
+                Exemplo de chamada da função:
+                <pre>
+                    <code>
+                        createMonster('Fogo Dragão', 'fogo', 150, ['soltar chamas', 'voar', 'rugido infernal']);
+                    </code>
+                </pre>
+            </p>
+        
+            <p>
+                Exemplo de saída:
+                <pre>
+                    <code>
+                        { name: 'Fogo Dragão', element: 'fogo', health: 150, skills: ['soltar chamas', 'voar', 'rugido
+                        infernal'] }
+                    </code>
+                </pre>
+                Divirta-se criando monstros incríveis! 🎩⚔️
+            </p>
+        </section>
+
+        <div id="container">
+            <section id="sec-monstro">
+                <div>
+                    <label for="nome">Nome do monstro:</label>
+                    <input type="text" name="nome" id="nome" autofocus>
+                    <br>
+                    <label for="">Tipo do Monstro:</label>
+                    <select name="tipo" id="tipo">
+                        <option value="" selected disabled></option>
+                        <option value="Dragão">Dragão</option>
+                        <option value="Goblin">Goblin</option>
+                        <option value="Zumbi">Zumbi</option>
+                        <option value="Vampiro">Vampiro</option>
+                    </select>
+                    <br>
+                    <label for="nivel">Nível de força entre 50 e 200:</label>
+                    <input type="number" name="nivel" id="nivel" min="50" max="200">
+                    <br>
+                    <label for="especial">Habilidade especial:</label>
+                    <input type="text" name="especial" id="especial">
+                    <br>
+                    <input type="button" value="Criar Monstro" id="btn-criar">
+                </div>
+                <div id="resultado"></div>
+            </section>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

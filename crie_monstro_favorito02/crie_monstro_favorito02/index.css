@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-color: #b18818c4;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 1150px;
+    padding: 10px;
+}
+
+section {
+    padding: 7px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#sec-monstro {
+    display: flex;
+    column-gap: 30px;
+    width: 800px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+}
+
+input, select {
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
