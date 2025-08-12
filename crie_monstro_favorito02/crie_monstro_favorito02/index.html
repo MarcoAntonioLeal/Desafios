@@ -63,7 +63,20 @@
                 <div>
                     <label for="nome">Nome do monstro:</label>
                     <input type="text" name="nome" id="nome" autofocus>
+
                     <br>
+
+                    <label for="">Tipo de Elemente:</label>
+                    <select name="elemento" id="elemento">
+                        <option value="" selected disabled></option>
+                        <option value="fogo">Dragão</option>
+                        <option value="agua">Goblin</option>
+                        <option value="terra">Zumbi</option>
+                        <option value="ar">Vampiro</option>
+                    </select>
+
+                    <br>
+
                     <label for="">Tipo do Monstro:</label>
                     <select name="tipo" id="tipo">
                         <option value="" selected disabled></option>
@@ -72,12 +85,14 @@
                         <option value="Zumbi">Zumbi</option>
                         <option value="Vampiro">Vampiro</option>
                     </select>
+
                     <br>
+
                     <label for="nivel">Nível de força entre 50 e 200:</label>
                     <input type="number" name="nivel" id="nivel" min="50" max="200">
                     <br>
                     <label for="especial">Habilidade especial:</label>
-                    <input type="text" name="especial" id="especial">
+                    <input type="text" name="especial" id="elemento">
                     <br>
                     <input type="button" value="Criar Monstro" id="btn-criar">
                 </div>
