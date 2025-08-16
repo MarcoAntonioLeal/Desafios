@@ -69,33 +69,59 @@
                     <label for="">Tipo de Elemente:</label>
                     <select name="elemento" id="elemento">
                         <option value="" selected disabled></option>
-                        <option value="fogo">Dragão</option>
-                        <option value="agua">Goblin</option>
-                        <option value="terra">Zumbi</option>
-                        <option value="ar">Vampiro</option>
+                        <option value="Fogo">Fogo</option>
+                        <option value="Água">Água</option>
+                        <option value="Terra">Terra</option>
+                        <option value="Ar">Ar</option>
                     </select>
 
                     <br>
 
-                    <label for="">Tipo do Monstro:</label>
-                    <select name="tipo" id="tipo">
+                    <label for="">Escolha no máximo 3 habilidades</label>
+                    <select name="tipo" id="habilidade">
                         <option value="" selected disabled></option>
-                        <option value="Dragão">Dragão</option>
-                        <option value="Goblin">Goblin</option>
-                        <option value="Zumbi">Zumbi</option>
-                        <option value="Vampiro">Vampiro</option>
+                        <option value="Mestre em Espada">
+                            Mestre em Espada
+                        </option>
+                        <option value="Arco e Flecha">
+                            Arco e Flecha
+                        </option>
+                        <option value="Furtividade">
+                            Furtividade
+                        </option>
+                        <option value="Ladino">
+                            Ladino
+                        </option>
+                        <option value="Tática">
+                            Tática
+                        </option>
+                        <option value="Mestre em Magia">
+                            Mestre em Magia
+                        </option>
+                        <option value="Feitiçaria">
+                            Feitiçaria
+                        </option>
+                        <option value="Alquimia">
+                            Alquimia
+                        </option>
+                        <option value="Encantamento">
+                            Encantamento
+                        </option>
+                        <option value="Divinação">
+                            Divinação
+                        </option>
                     </select>
 
                     <br>
 
                     <label for="nivel">Nível de força entre 50 e 200:</label>
                     <input type="number" name="nivel" id="nivel" min="50" max="200">
+
                     <br>
-                    <label for="especial">Habilidade especial:</label>
-                    <input type="text" name="especial" id="elemento">
-                    <br>
+
                     <input type="button" value="Criar Monstro" id="btn-criar">
                 </div>
+
                 <div id="resultado"></div>
             </section>
         </div>
